@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avatar Your Profile "
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Select Your Avatar "
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="20sp"
+
+            />
+
+
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_avatar_app_intro"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/man_avatar"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                />
+
+
+            <ImageView
+                android:id="@+id/select_avatar_app_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit"
+                app:layout_anchor="@id/img_avatar_app_intro"
+                app:layout_anchorGravity="bottom|right"
+                />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_app_intro_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final Step And Welcome !"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
